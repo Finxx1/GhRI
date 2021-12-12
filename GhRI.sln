@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GhRI", "GhRI.csproj", "{866EF2CA-708B-4A96-AD90-2C8A360818B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{866EF2CA-708B-4A96-AD90-2C8A360818B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{866EF2CA-708B-4A96-AD90-2C8A360818B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{866EF2CA-708B-4A96-AD90-2C8A360818B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{866EF2CA-708B-4A96-AD90-2C8A360818B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63AC9EC2-8D65-4F6E-9B9C-828538658DCD}
+	EndGlobalSection
+EndGlobal
