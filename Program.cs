@@ -10,7 +10,7 @@ namespace GhRI {
 
             Repository  Repo = await Github.Repository.Get(User, Repository);
 
-            if (Repo.Description.Contains("Library") || Repo.Description.Contains("library") || Repo.Description.Contains("LIBRARY")) {
+            if (Repo.Description.ToLower().Contains("Library")) {
                 System.Console.WriteLine("This is a library you dummy!");
                 return -1;
             }

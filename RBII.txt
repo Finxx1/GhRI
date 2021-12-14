@@ -1,0 +1,31 @@
+﻿The RBII (Repository Build & Install Instructions) file specification
+
+Description:
+    The RBII file format specifies how to compile and install software without requiring human intervention. Currently, we are planning on supporting Python and C.
+
+Format: YAML
+
+Variables 
+    Lang            Specifies the programming language used in the project in lowercase.
+(O) Compiler        Specifies the name of the compiler used.
+(O) Interpreter     Specifies the name of the interpreter used.
+(O) Dependancies    Specifies any dependancies used.
+    Source          Specifies any source files that need to be passed to the compiler.
+(O) Flags           Specifies any additional compiler flags to be passed.
+
+(O) MacInstallDir   Specifies the directory to place binaries on macOS.
+(O) MacInstallCMD   Specifies any additional commands to run via macOS. If the command requires super-user permission, GhRI will prompt the user for the admin password.
+(O) WinInstallDir   Specifies the directory to place binaries on NT Windows.
+(O) WinInstallCMD   Specifies any additional commands to run via Windows. If the command requires admin privileges, GhRI will prompt the user for the admin password.
+(O) LinuxInstallDir Specifies the directory to place binaries on Linux.
+(O) LinuxInstallCMD   Specifies any additional commands to run via Linux. If the command requires super-user permission, GhRI will prompt the user for the admin password.
+(O) UnixInstallDir  Specifies the directory to place binaries on Unix-like OS's.
+(O) UnixInstallCMD  Specifies any additional commands to run on this Unix machine. If the command requires admin privileges, GhRI will prompt the user for the admin password.
+(O) DosInstallDir   Specifies the directory to place binaries on Non-NT Windows OS's.
+(O) DosInstallCMD   Specifies any additional commands to run via DOS.
+
+An implementation of RBII is invalid if any of the following conditions are met:
+    The implementation stores admin passwords.
+    The implementation does not require the `Source` or `Lang` variables to be set
+    The implementation requires install instructions, compiler/interpreter definitions, dependancies, and/or flags.
+    The implementation does not run the commands via the default shell.
